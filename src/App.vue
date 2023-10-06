@@ -58,6 +58,15 @@ function scrollToTop() {
 </script>
 
 <style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  max-width: 100vw;
+  padding: 0 10px;
+}
+
 .surge-effect{
   animation: allTech 2s ease-out forwards;
   transform: translateY(100vh);

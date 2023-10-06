@@ -31,7 +31,6 @@ export default {
 </script>
 <style scoped>
 .nav-container{
-  width: auto;
   height: 80px;
   display: flex;
   flex-direction: row;
