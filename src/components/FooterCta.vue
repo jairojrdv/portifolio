@@ -39,6 +39,7 @@
 </template>
 <style>
 .footer-container{
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

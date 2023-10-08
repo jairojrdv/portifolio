@@ -30,6 +30,15 @@ export default {
       currentPersonIndex: 0,
       isChickenVisible: false,
       people: [
+				{
+					photo:
+						"url('https://media.licdn.com/dms/image/C4D03AQFP5ooZ_mGnCQ/profile-displayphoto-shrink_400_400/0/1516955073834?e=1702512000&v=beta&t=0n2lJ2TVlZJRRLqOACXLfLRBCYDoZlCEaWQt5evyQBk')",
+					name: "Jairo Rodrigues",
+					profession: "CTO Grupo VOZ",
+					description:
+						"Durante os 9 meses em que Jairo Junior estagiou conosco na área de desenvolvimento de software, ele se destacou de forma notável. Inteligente, ético e com uma capacidade incrível de aprendizado rápido, Jairo não só trouxe competência técnica, mas também uma energia positiva contagiante para a equipe. Foi um privilégio trabalhar ao lado de alguém tão dedicado e talentoso.",
+						link: "https://www.linkedin.com/in/jairo-rodrigues-527927130/"
+				},
         {
           photo:
             "url('https://media.licdn.com/dms/image/D4D03AQE4t2H0gJGZtg/profile-displayphoto-shrink_400_400/0/1671991801612?e=1701907200&v=beta&t=30D39saxui5BpN0wJ1Hwmle0ILP2efh6UN-tBT34ulg')",
@@ -41,27 +50,21 @@ export default {
         },
         {
           photo:
-            "url('https://cdn.pixabay.com/photo/2019/02/11/20/20/woman-3990680_960_720.jpg')",
-          name: "Anna Grey",
-          profession: "UFC FIGHTER",
+            "url('https://media.licdn.com/dms/image/D4D03AQG-K9E7R8okoQ/profile-displayphoto-shrink_400_400/0/1684517946748?e=1702512000&v=beta&t=FxK1uSTwsto2J03h2IgswtIBXFUPmkEGRMT4iEJfof0')",
+          name: "Welliton Cunha",
+          profession: "Backend Developer Honda Motoca",
           description:
-            "I'm baby migas cornhole hell of etsy tofu, pickled af cardigan pabst. Man braid deep v pour-over, blue bottle art party thundercats vape. Yr waistcoat whatever yuccie, farm-to-table next level PBR&B. Banh mi pinterest palo santo, aesthetic chambray",
+            "É com grande satisfação que recomendo Jairo Araújo como desenvolvedor de software altamente competente. Durante o seu desempenho na faculdade, demonstrou profundo conhecimento técnico, criatividade e comprometimento com a qualidade. Sua capacidade de solucionar problemas de forma eficaz e trabalhar bem em equipe fazem dele um ativo valioso. Tenho certeza de que Jairo Araújo continuará a ser uma contribuição valiosa para qualquer projeto ou organização.",
+						link: "https://www.linkedin.com/in/welliton-cunha-1ab27833/",
         },
         {
           photo:
-            "url('https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg')",
-          name: "Branson Cook",
-          profession: "ACTOR",
+            "url('https://media.licdn.com/dms/image/D4D03AQGjOzIgHeXYWw/profile-displayphoto-shrink_400_400/0/1686343982695?e=1702512000&v=beta&t=qMrby2W2xBRTrBKSVAy-f8j8JFVMmlcsusAtxFNK9yo')",
+          name: "Thalles Canela",
+          profession: "Gerente de Projeto Honda Motoca e Professor Facimp Wyden",
           description:
-            "Radio telescope something incredible is waiting to be known billions upon billions Jean-François Champollion hearts of the stars tingling of the spine. Encyclopaedia galactica not a sunrise but a galaxyrise concept of the number one encyclot",
-        },
-        {
-          photo:
-            "url('https://cdn.pixabay.com/photo/2014/10/30/17/32/boy-509488_960_720.jpg')",
-          name: "Julius Grohn",
-          profession: "PROFESSIONAL CHILD",
-          description:
-            "Biscuit chocolate pastry topping lollipop pie. Sugar plum brownie halvah dessert tiramisu tiramisu gummi bears icing cookie. Gummies gummi bears pie apple pie sugar plum jujubes. Oat cake croissant bear claw tootsie roll caramels. Powder ice crea"
+            "Um aluno organizado e dedicado com metas de crescimento bem planejadas.",
+						link: "https://www.linkedin.com/in/thalles-canela/"
         },
       ],
     };
@@ -105,7 +108,7 @@ body {
 }
 
 .content-wrapper {
-  width: 80%;
+  width: 100vw;
 	  display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,6 +136,7 @@ h1 {
 	overflow: hidden;
 	display: grid;
 	place-items: center;
+	margin-bottom: 3%;
 }
 
 .review-wrap {
@@ -175,7 +179,7 @@ h1 {
 	background-color: #2c465c;
 	position: absolute;
 	top: 10%;
-	left: -10%;
+	left: -15%;
 	width: calc(2rem + 2vmin);
 	height: calc(2rem + 2vmin);
 }

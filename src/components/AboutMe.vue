@@ -7,11 +7,11 @@
         <div class="blue-line1"></div>
       </div>
       <div class="img-profile">
-      <img src="../assets/img-perfil.jpg" alt="">
+      <img src="../assets/perfil.jpg" alt="">
       </div>
-      <div class="text-profile">
-        <h5>
-          O código é uma arte e o <strong>web Desenvolvimento </strong>é um mar de infinidades. Sou Jairo Junior, graduando do Curso de <strong>Análise e Desenvolvimento de Sistemas </strong>com previsão de conclusão em 2024.2, há pouco mais de um ano concentro todos os meus estudos no <br> <strong>Web Desenvolvimento</strong> com foco em tecnologias como Vue.js, Node.js e Laravel.
+      <div class="container-text-profile">
+        <h5 class="text-profile">
+          O código é uma arte e o <strong>web Desenvolvimento </strong>é um mar de infinidades. Sou Jairo Junior, graduando do Curso de <strong>Análise e Desenvolvimento de Sistemas </strong>com previsão de conclusão em 2024.2, há pouco mais de um ano concentro todos os meus estudos no <br> <strong>Web Desenvolvimento</strong> com foco em tecnologias como Vue.js, Node.js e Laravel. Trabalhei em Empresas como Grupo VOz e Agência Targo, além de proejtos como VSSystem e SCS (Empresa Junior da Facimp Wynden). Sempre disposto por novos desafios e por criar soluções que sejam eficazes e inteligentes, gerando impacto e inovação.
         </h5>
       </div>
       <div class="social-midia">
@@ -65,12 +65,11 @@
 .img-profile img{
   width: 100%;
   position: absolute;
-  left: 0;
-  top: -160px;
+  left: -10px;
+  top: -75px;
 }
-.text-profile{
+.container-text-profile{
   font-size: 20px;
-  margin-top: 2%;
   width: 50%;
   color: #ffffff;
   text-align: center;
@@ -161,5 +160,35 @@ hr{
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../assets/background.jpg');
+}
+@media screen and (max-width: 540px){
+  .img-profile{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-top: -2%;
+    background: #767676;
+  }
+  .img-profile img{
+    width: 100%;
+    position: absolute;
+    left: -10px;
+    top: -30px;
+  }
+  .container-text-profile{
+    font-size: 15px;
+    margin-top: 2%;
+    width: 100vw;
+  }
+  .container-text-profile{
+    color: #ffffff;
+    text-align: center;
+    width: 80%;
+  }
+  br{
+    display: none;
+  }
 }
 </style>

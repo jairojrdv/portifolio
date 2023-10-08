@@ -85,4 +85,17 @@ export default {
   transform: translateY(-3px); /* Levanta levemente o elemento */
 }
 
+@media screen and (max-width: 540px) {
+  .tech {
+    flex: 1 0 calc(10% - 20px); /* Divide em 10 filhos por linha */
+    min-width: 60px;
+    margin: 10px; /* Espaçamento entre os filhos */
+    border-radius: 5px;
+    color: #FFFFFF;
+    background: #2c465c;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+  }
+}
 </style>

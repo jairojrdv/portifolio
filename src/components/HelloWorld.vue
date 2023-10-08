@@ -27,8 +27,8 @@ const count = ref(0)
   height: 60vh;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  gap: 5px;
+  margin: 30px 0 auto;
+  gap: 100px;
 }
 
 .profile-img {
