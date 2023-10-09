@@ -159,7 +159,7 @@ const count = ref(0);
     position: relative;
     transition: all 1s ease-in-out;
     width: 20rem;
-    margin: 120px 120px;
+    margin: 200px;
   }
   @keyframes soft {
     0% {
