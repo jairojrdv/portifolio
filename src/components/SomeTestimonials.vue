@@ -52,7 +52,7 @@ export default {
           photo:
             "url('https://media.licdn.com/dms/image/D4D03AQG-K9E7R8okoQ/profile-displayphoto-shrink_400_400/0/1684517946748?e=1702512000&v=beta&t=FxK1uSTwsto2J03h2IgswtIBXFUPmkEGRMT4iEJfof0')",
           name: "Welliton Cunha",
-          profession: "Backend Developer Honda Motoca",
+          profession: "Backend Pleno Honda Motoca",
           description:
             "É com grande satisfação que recomendo Jairo Araújo como desenvolvedor de software altamente competente. Durante o seu desempenho na faculdade, demonstrou profundo conhecimento técnico, criatividade e comprometimento com a qualidade. Sua capacidade de solucionar problemas de forma eficaz e trabalhar bem em equipe fazem dele um ativo valioso. Tenho certeza de que Jairo Araújo continuará a ser uma contribuição valiosa para qualquer projeto ou organização.",
 						link: "https://www.linkedin.com/in/welliton-cunha-1ab27833/",
@@ -61,10 +61,28 @@ export default {
           photo:
             "url('https://media.licdn.com/dms/image/D4D03AQGjOzIgHeXYWw/profile-displayphoto-shrink_400_400/0/1686343982695?e=1702512000&v=beta&t=qMrby2W2xBRTrBKSVAy-f8j8JFVMmlcsusAtxFNK9yo')",
           name: "Thalles Canela",
-          profession: "Gerente de Projeto Honda Motoca e Professor Facimp Wyden",
+          profession: "Gerente de Projeto Honda Motoca",
           description:
             "Um aluno organizado e dedicado com metas de crescimento bem planejadas.",
 						link: "https://www.linkedin.com/in/thalles-canela/"
+        },
+				{
+          photo:
+            "url('https://media.licdn.com/dms/image/C4D03AQGbnlB3RQ3qXA/profile-displayphoto-shrink_400_400/0/1658659120741?e=1702512000&v=beta&t=8qGVMw_xVs6gdqk0N3j8JS1IhaFqnZ1M1hKdragNPaU')",
+          name: "Ivo Vilar",
+          profession: "Full-Stack Pleno Grupo VOZ",
+          description:
+            "Jairo é um excelente profissional, dedicado, pontual, sempre está disposto a aprender mais, trabalha bem em equipe e além do profissional é uma excelente pessoa.",
+						link: "https://www.linkedin.com/in/ivo-vilar/"
+        },
+				{
+          photo:
+            "url('https://media.licdn.com/dms/image/D4D03AQERDdTnvytUIw/profile-displayphoto-shrink_400_400/0/1688221330044?e=1702512000&v=beta&t=cuw2j9KkxWZVqn2N_IQvDJGCe0kM8Y0-0S0iuEZI6jw')",
+          name: "Fernando Pontes",
+          profession: "Desenvolvedor Flutter Senior Pulse",
+          description:
+            "O tempo que passei com Jairo percebi ser uma pessoa muito responsável, atencioso e zeloso com os que estão próximos. Somando a isso, está sempre procurando evoluir através dos estudos e também ajudando os outros através de tutorias e aulas particulares. Tenho ótimas lembranças do tempo que compartilhamos.",
+						link: "https://www.linkedin.com/in/fernandospontes/"
         },
       ],
     };
@@ -100,7 +118,6 @@ export default {
 html {
 	font-size: 12px;
 }
-
 
 .content-wrapper {
   width: 100vw;
@@ -252,42 +269,8 @@ h1 {
 	transform: rotate(5deg);
 }
 
-.move-head {
-	animation: moveHead 1.55s infinite;
-	animation-delay: -0.8s;
-}
 
-.hide-chicken-btn {
-	border: 2px solid rgb(226, 89, 79);
-	background-color: rgb(255, 224, 224);
-	color: rgb(226, 79, 79);
-	border-radius: 2rem;
-	padding: calc(0.5rem + 0.2vmin) 0;
-	width: calc(10rem + 5vmin);
-	text-align: center;
-	transition: background-color 0.3s, transform 0.3s;
-	cursor: pointer;
-	margin-bottom: calc(1.4rem + 1vmin);
-}
-
-.hide-chicken-btn:hover {
-	transition: background-color 0.3s, transform 0.3s;
-	background-color: rgb(255, 255, 255);
-	transform: rotate(5deg);
-}
-
-@keyframes moveHead {
-	0% {
-	}
-	25% {
-		transform: translate(0.5rem, 1rem) rotate(5deg);
-	}
-	100% {
-		transform: translate(0, 0) rotate(-5deg);
-	}
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 740px) {
 	.content-wrapper {
     display: flex;
     flex-direction: column;
@@ -295,5 +278,14 @@ h1 {
     align-items: center;
     min-height: 100vh;
   }
+	.description {
+		font-size: calc(0.8rem + 0.3vmin);
+		width: 70%;
+		max-width: 40rem;
+		text-align: center;
+		margin-bottom: calc(1.4rem + 1vmin);
+		color: rgb(92, 92, 92);
+		line-height: 1rem;
+	}
 }
 </style>

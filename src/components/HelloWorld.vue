@@ -1,21 +1,20 @@
 <script setup>
+import { ref } from "vue";
 
-import { ref } from 'vue'
-
-const count = ref(0)
+const count = ref(0);
 </script>
 
 <template>
   <div class="container-head" id="home">
     <div class="container-text">
-      <div class="header-text">Olá mundo,
-      </div>
-      <div class="header-text2">meu nome é<mark class="shine-top" >Jairo</mark> 
+      <div class="header-text">Olá mundo,</div>
+      <div class="header-text2">
+        meu nome é<mark class="shine-top">Jairo</mark>
       </div>
       <div class="sub-header">Desenvolvedor Full-Stack</div>
     </div>
     <div class="profile-img">
-      <img src="../assets/code-typing-animate.svg" alt="Descrição da imagem">
+      <img src="../assets/code-typing-animate.svg" alt="Descrição da imagem" />
     </div>
   </div>
 </template>
@@ -44,10 +43,10 @@ const count = ref(0)
 @keyframes textImg {
   from {
     transform: translateX(100vw);
-	}
-	to {
-		transform: translateX(0);
-	}
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .container-text {
@@ -61,10 +60,10 @@ const count = ref(0)
 @keyframes textFade {
   from {
     transform: translateX(-100vw);
-	}
-	to {
-		transform: translateX(0);
-	}
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .header-text {
@@ -96,6 +95,19 @@ const count = ref(0)
   font-size: 30px;
 }
 
+.shine-top {
+  animation: pulseTop 2s ease-in-out infinite alternate;
+}
+@keyframes pulseTop {
+  0% {
+    fill: #2c465c;
+  }
+
+  100% {
+    fill: #047ade; /* Cor brilhante desejada */
+    text-shadow: #047ade 0px 0px 3px;
+  }
+}
 @media screen and (max-width: 1080px) {
   .container-text {
     width: 100%;
@@ -109,31 +121,60 @@ const count = ref(0)
   }
 }
 
-.shine-top {
-  animation: pulseTop 2s ease-in-out infinite alternate;
-}
-@keyframes pulseTop {
-  0% {
-    fill: #2c465c;
-  }
-
-  100% {
-    fill: #047ade; /* Cor brilhante desejada */
-    text-shadow: #047ade 0px 0px 20px;
-  }
-}
 @media screen and (max-width: 740px) {
+  .shine-top {
+    animation: pulseTop 2s ease-in-out infinite alternate;
+  }
+  @keyframes pulseTop {
+    0% {
+      fill: #2c465c;
+    }
+
+    100% {
+      fill: #047ade; /* Cor brilhante desejada */
+      text-shadow: #047ade 0px 0px 8px;
+    }
+  }
   .sub-header {
     margin-top: 3px;
     font-size: 18px;
   }
-  .header-text, .header-text2 {
+  .header-text,
+  .header-text2 {
     font-size: 35px;
     line-height: 50px;
   }
   .header-text2 mark {
     font-size: 40px;
     margin-left: 10px;
+  }
+  .container-head {
+    animation: soft 8s ease-in-out infinite;
+    background: #e8ecf0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    height: 20rem;
+    position: relative;
+    transition: all 1s ease-in-out;
+    width: 20rem;
+    margin: 120px 120px;
+  }
+  @keyframes soft {
+    0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  }
+  .container-text {
+    width: 300px;
   }
 }
 </style>

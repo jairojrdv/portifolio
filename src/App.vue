@@ -2,11 +2,11 @@
   <div class="container">
     <NavBar class="NavBar"></NavBar>
     <HelloWorld></HelloWorld>
-      <AllTechnologies class="surge-effect"></AllTechnologies>
-      <SomeProjects class="surge-effect"></SomeProjects>
-      <AboutMe></AboutMe>
-      <SomeTestimonials></SomeTestimonials>
-      <FooterCta></FooterCta>
+    <AllTechnologies class="surge-effect"></AllTechnologies>
+    <SomeProjects class="surge-effect"></SomeProjects>
+    <AboutMe></AboutMe>
+    <SomeTestimonials></SomeTestimonials>
+    <FooterCta></FooterCta>
     <a
       href="https://wa.me/5599984311884?text=Ol%C3%A1,%20gostaria%20dei%20uma%20olhada%20no%20seu%20portif%C3%B3lio,%20que%20tal%20uma%20conversa%20sobre%20um%20projeto?"
       target="_blank"
@@ -61,7 +61,7 @@ function scrollToTop() {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  max-width: 100vw;
+  max-width: 100%;
   padding: 0 10px;
 }
 
@@ -129,5 +129,13 @@ function scrollToTop() {
 
 .section-links a:hover {
   color: #007bff; /* Cor ao passar o mouse sobre os links */
+}
+@media screen and (max-width: 540px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
 }
 </style>

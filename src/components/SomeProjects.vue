@@ -7,11 +7,15 @@
     <div class="projects">
       <div class="project">
         <div class="computer">
-          <img
-            src="../assets/macbook-white.png"
-            alt="MacBook Computer Apple"
-          />
-          <div id="" style=""></div>
+          <a href="https://jairojrdv.github.io/front-aprende-js/" target="_blank">
+            <img
+              src="../assets/macbook-white.png"
+              alt="MacBook Computer Apple"
+            >
+            <div id="aprendejs-img">
+              <img src="../assets/aprendejs-img.jpg" alt="">
+            </div>
+          </a>
         </div>
         <div class="project-body">
           <div class="project-title">Aprende JS</div>
@@ -27,11 +31,15 @@
       </div>
       <div class="project reverse">
         <div class="computer">
-          <img
-            src="../assets/macbook-white.png"
-            alt="MacBook Computer Apple"
-          />
-          <div id="" style=""></div>
+          <a href="https://encontro-b5uu8cm7b-juliodeveloper.vercel.app/" target="_blank">
+            <img
+              src="../assets/macbook-white.png"
+              alt="MacBook Computer Apple"
+            />
+            <div id="checkin-img">
+              <img src="../assets/checkin-img.png">
+            </div>
+          </a>
         </div>
         <div class="project-body">
           <div class="project-title">Check-in System</div>
@@ -47,21 +55,25 @@
       </div>
       <div class="project">
         <div class="computer">
-          <img
-            src="../assets/macbook-white.png"
-            alt="MacBook Computer Apple"
-          />
-          <div id="" style=""></div>
+          <a href="https://jairojrdv.github.io/joguinho-nonato-bros/" target="_blank">
+            <img
+              src="../assets/macbook-white.png"
+              alt="MacBook Computer Apple"
+            />
+            <div id="nonatobros-img">
+              <img src="../assets/nonatobros-img.png">
+            </div>
+          </a>
         </div>
         <div class="project-body">
-          <div class="project-title">Aprende JS</div>
+          <div class="project-title">Nonato Bros</div>
           <div class="project-description">
-            Aprende JS é uma aplicação feita para aprender Javascript através do método de estudo por repetição. Basicamente a aplicação traz o nome de um método javascript, a sua definição e uma aplicação do mesmo.
+            Nonato Bros é um jogo inspirado em Mario Bros no qual o personagem principal é Raimundo Nonato. O divertido jogo pode facilmente ser jogado no computador porém como ainda está em produção, não está disponível para mobile atualmente.
           </div>
           <div class="used-technologies">
             <div class="tech">JavaScript</div>
-            <div class="tech">Node</div>
-            <div class="tech">Mongo</div>
+            <div class="tech">HTML5</div>
+            <div class="tech">CSS3</div>
           </div>
         </div>
       </div>
@@ -95,6 +107,7 @@
 
 .project .computer {
   width: 500px;
+  position: relative;
 }
 
 .project .computer img {
@@ -128,13 +141,16 @@
 
 .used-technologies {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .blue-line-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -20px;
+  margin-top: -15px;
 }
 
 .blue-line {
@@ -142,6 +158,30 @@
 	width: 6rem;
 	background-color: #2c465c;
 	margin-bottom: calc(3rem + 2vmin);
+}
+#aprendejs-img img{
+  position: absolute;
+  top: 8%;
+  left: 15.8%;
+  width: 68%;
+  height: 85%;
+  z-index: -1;
+}
+#checkin-img img{
+  position: absolute;
+  top: 8.1%;
+  left: 15%;
+  width: 71%;
+  height: 79%;
+  z-index: -1;
+}
+#nonatobros-img img{
+  position: absolute;
+  top: 8.1%;
+  left: 16%;
+  width: 68%;
+  height: 79%;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1080px) {
@@ -159,6 +199,12 @@
 }
 
 @media screen and (max-width: 740px) {
+  .project-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .project .computer {
     width: 330px;
   }
