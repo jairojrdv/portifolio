@@ -5,29 +5,17 @@
       <div class="blue-line"></div>
     </div>
     <div class="technologies">
-      <div class="tech">HTML5  </div>
-      <div class="tech"> CSS3 </div>
-      <div class="tech"> JavaScript </div>
-      <div class="tech"> Vue </div>
-      <div class="tech"> Node </div>
-      <div class="tech"> PHP </div>
-      <div class="tech"> Laravel </div>
-      <div class="tech"> Livewire </div>
-      <div class="tech"> Bootstrap </div>
-      <div class="tech"> Tailwind </div>
-      <div class="tech"> Docker </div>
-      <div class="tech"> GIT </div>
-      <div class="tech"> GitHub </div>
-      <div class="tech"> Figma </div>
-      <div class="tech"> MySQL </div>
-      <div class="tech"> Mongo </div>
-      <div class="tech"> Example </div>
-      <div class="tech"> Example </div>
+      <div v-for="(technologie, index) in technologies" :key="index" class="tech">{{ technologie }}</div>
     </div>
   </div>
 </template>
 <script>
 export default {
+  data(){
+    return {
+      technologies: ["HTML5", "CSS3", "JavaScript", "Vue", "Node", "PHP", "Laravel", "Bootstrap", "Tailwind", "Docker", "GIT", "GitHub", "Figma", "MySQL", "Mongo", "PostgreSQL"]
+    }
+  },
   mounted() {
     const technologies = document.querySelectorAll('.tech-scroll');
 
@@ -68,7 +56,7 @@ export default {
 }
 
 .tech {
-  flex: 1 0 calc(10% - 20px); /* Divide em 10 filhos por linha */
+  flex: 1 0 calc(10% - 10px);
   min-width: 30px;
   margin: 10px; /* Espaçamento entre os filhos */
   border-radius: 5px;
@@ -87,7 +75,7 @@ export default {
 
 @media screen and (max-width: 540px) {
   .tech {
-    flex: 1 0 calc(10% - 20px); /* Divide em 10 filhos por linha */
+    flex: 1 0 calc(30% - 5px); /* Divide em 10 filhos por linha */
     min-width: 60px;
     margin: 10px; /* Espaçamento entre os filhos */
     border-radius: 5px;

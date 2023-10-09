@@ -16,11 +16,7 @@
         <div class="project-body">
           <div class="project-title">Aprende JS</div>
           <div class="project-description">
-            It is a long established fact that a reader will be distracted by the
-            readable content of a page when looking at its layout. The point of
-            using Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters, as opposed to using 'Content here, content here', making it
-            look like readable English.
+            Aprende JS é uma aplicação full-stack feita para ensinar Javascript através do método de estudo por repetição. Basicamente a aplicação traz o nome de um método javascript, a sua definição e uma aplicação do mesmo.
           </div>
           <div class="used-technologies">
             <div class="tech">JavaScript</div>
@@ -40,11 +36,7 @@
         <div class="project-body">
           <div class="project-title">Check-in System</div>
           <div class="project-description">
-            It is a long established fact that a reader will be distracted by the
-            readable content of a page when looking at its layout. The point of
-            using Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters, as opposed to using 'Content here, content here', making it
-            look like readable English.
+            O sistema de Check-in foi feito para controlar, gerenciar e organizar com muito mais facilidade os encontros da igreja local que frequento. O sistema basicamente cadastra um "encontrista" com apenas alguns de seus dados e o deixa disponível para o check-in assim que chega para o embarque no dia e horário combinado. Nesta aplicação fui idealizador e responsável pelo front-end.
           </div>
           <div class="used-technologies">
             <div class="tech">Vue</div>
@@ -64,11 +56,7 @@
         <div class="project-body">
           <div class="project-title">Aprende JS</div>
           <div class="project-description">
-            It is a long established fact that a reader will be distracted by the
-            readable content of a page when looking at its layout. The point of
-            using Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters, as opposed to using 'Content here, content here', making it
-            look like readable English.
+            Aprende JS é uma aplicação feita para aprender Javascript através do método de estudo por repetição. Basicamente a aplicação traz o nome de um método javascript, a sua definição e uma aplicação do mesmo.
           </div>
           <div class="used-technologies">
             <div class="tech">JavaScript</div>

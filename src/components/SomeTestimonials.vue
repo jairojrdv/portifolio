@@ -101,11 +101,6 @@ html {
 	font-size: 12px;
 }
 
-body {
-	height: 100vh;
-	display: grid;
-	place-items: center;
-}
 
 .content-wrapper {
   width: 100vw;

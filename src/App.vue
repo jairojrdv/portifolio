@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <NavBar class="NavBar" :class="{ 'transparent': isNavBarTransparent }"></NavBar>
+    <NavBar class="NavBar"></NavBar>
     <HelloWorld></HelloWorld>
       <AllTechnologies class="surge-effect"></AllTechnologies>
       <SomeProjects class="surge-effect"></SomeProjects>

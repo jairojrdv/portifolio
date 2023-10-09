@@ -10,7 +10,7 @@ const count = ref(0)
     <div class="container-text">
       <div class="header-text">Olá mundo,
       </div>
-      <div class="header-text2">meu nome é<mark>Jairo</mark> 
+      <div class="header-text2">meu nome é<mark class="shine-top" >Jairo</mark> 
       </div>
       <div class="sub-header">Desenvolvedor Full-Stack</div>
     </div>
@@ -109,6 +109,19 @@ const count = ref(0)
   }
 }
 
+.shine-top {
+  animation: pulseTop 2s ease-in-out infinite alternate;
+}
+@keyframes pulseTop {
+  0% {
+    fill: #2c465c;
+  }
+
+  100% {
+    fill: #047ade; /* Cor brilhante desejada */
+    text-shadow: #047ade 0px 0px 20px;
+  }
+}
 @media screen and (max-width: 740px) {
   .sub-header {
     margin-top: 3px;

@@ -76,6 +76,7 @@
 
   100% {
     fill: #ffffff; /* Cor brilhante desejada */
+    text-shadow: #ffffff 0 0 30px;
   }
 }
 </style>
