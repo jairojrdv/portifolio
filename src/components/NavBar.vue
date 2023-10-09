@@ -23,7 +23,7 @@
         <li> <a href="#sobre">Sobre Mim</a></li>
         <li> <a href="#depoimentos">Depoimentos</a></li>
       </ul>
-      <a class="surprise-me-btn" href=" " target="_blank">Contato</a>
+      <a class="surprise-me-btn" href="" target="_blank">Contato</a>
       <svg @click="changeMenu()" class="menu-mobile" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="#2c465c"/>
       </svg>
@@ -128,6 +128,10 @@ export default {
 .links-mobile {
   background: rgba(0, 0, 0, .8);
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
 }
@@ -141,6 +145,7 @@ export default {
   align-items: center;
   gap: 40px;
   font-size: 28px;
+  margin-left: -28px;
 }
 
 #close-menu {

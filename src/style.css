@@ -85,25 +85,21 @@ button:focus-visible {
   padding: 0;
   text-align: center;
 }
-/* Ocultar a scrollbar inicialmente */
-/* Ocultar a scrollbar inicialmente */
 ::-webkit-scrollbar {
   width: 0;
 }
 
-/* Mostrar a scrollbar apenas quando a página for rolada */
 body::-webkit-scrollbar {
-  width: 12px; /* Largura da scrollbar */
+  width: 12px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #2c465c; /* Cor da thumb da scrollbar */
-  border-radius: 0; /* Arredonda as bordas da thumb */
+  background-color: #2c465c; 
+  border-radius: 0; 
 }
 
-/* Opcional: estilo para a track (trilha) da scrollbar */
 body::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Cor de fundo da track */
+  background-color: #f1f1f1;
 }
 
 @media (prefers-color-scheme: light) {
