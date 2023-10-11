@@ -5,17 +5,37 @@
       <div class="blue-line"></div>
     </div>
     <div class="technologies">
-      <div v-for="(technologie, index) in technologies" :key="index" class="tech">{{ technologie }}</div>
+      <div v-for="(technology, index) in technologies" :key="index" class="tech">
+        {{ technology.label }}
+        <span class="tooltiptext">{{ technology.description }}</span>
+      </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-  data(){
-    return {
-      technologies: ["HTML5", "CSS3", "JavaScript", "Vue", "Node", "PHP", "Laravel", "Bootstrap", "Tailwind", "Docker", "GIT", "GitHub", "Figma", "MySQL", "Mongo", "PostgreSQL"]
-    }
-  },
+    data(){
+      return {
+        technologies: [
+        { label: "HTML5", description: "Linguagem de marcação para páginas web" },
+        { label: "CSS3", description: "Linguagem de estilo para páginas web" },
+        { label: "JavaScript", description: "Linguagem de programação para páginas web" },
+        { label: "Vue", description: "Framework JavaScript progressivo" },
+        { label: "Node", description: "Plataforma que permite a execução de JavaScript no servidor." },
+        { label: "PHP", description: "Linguagem de script do lado do servidor" },
+        { label: "Laravel", description: "Framework PHP para desenvolvimento web" },
+        { label: "Bootstrap", description: "Framework CSS para design responsivo" },
+        { label: "Tailwind", description: "Framework CSS utilitário" },
+        { label: "Docker", description: "Plataforma de contêinerização" },
+        { label: "GIT", description: "Sistema de controle de versão distribuído" },
+        { label: "GitHub", description: "Plataforma de hospedagem de código" },
+        { label: "Figma", description: "Ferramenta de design de interface de usuário" },
+        { label: "MySQL", description: "Sistema de gerenciamento de banco de dados" },
+        { label: "Mongo", description: "Banco de dados NoSQL" },
+        { label: "PostgreSQL", description: "Sistema de gerenciamento de banco de dados relacional" },
+      ],
+      }
+    },
   mounted() {
     const technologies = document.querySelectorAll('.tech-scroll');
 
@@ -33,6 +53,7 @@ export default {
       });
     });
   },
+
 };
 </script>
 <style>
@@ -71,6 +92,33 @@ export default {
   color: #000000;
   background: #047ade;
   transform: translateY(-3px); /* Levanta levemente o elemento */
+}
+.tech .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tech:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tech:hover {
+  color: #000000;
+  background: #047ade;
+  transform: translateY(-3px);
 }
 
 @media screen and (max-width: 540px) {

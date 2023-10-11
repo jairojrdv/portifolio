@@ -80,7 +80,7 @@
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 .project-container {
   width: 100vw;
   margin: 80px 0;
@@ -183,7 +183,12 @@
   height: 79%;
   z-index: -1;
 }
-
+.tech:hover {
+  color: #000000;
+  background: #047ade;
+  transform: translateY(0px); /* Levanta levemente o elemento */
+  cursor: default;
+}
 @media screen and (max-width: 1080px) {
   .project, .project.reverse {
     flex-direction: column;
