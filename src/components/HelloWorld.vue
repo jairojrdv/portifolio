@@ -18,6 +18,12 @@ const count = ref(0);
     </div>
   </div>
 </template>
+<script>
+export default {
+  name: 'HelloWorld',
+  // Outras opções do componente aqui
+}
+</script>
 
 <style scoped>
 .container-head {
