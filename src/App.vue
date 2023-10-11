@@ -173,7 +173,7 @@ body .modal-content {
 .input{
   width: 100%;
   height: 100%;
-  color: #fff;
+  color: #2c465c;
     font-size: inherit;
     font-family: inherit;
     background-color: transparent;
@@ -182,7 +182,7 @@ body .modal-content {
     border-radius: 8px;
 }
 .input-text{
-    color: #fff;
+    color: #2c465c;
     font-size: inherit;
     font-family: inherit;
     background-color: transparent;
