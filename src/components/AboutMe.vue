@@ -12,7 +12,7 @@
       </div>
       <div class="container-text-profile">
         <h5 class="text-profile">
-          O código é uma arte e o <strong>web Desenvolvimento </strong>é um mar de infinidades. Sou Jairo Junior, graduando do Curso de <strong>Análise e Desenvolvimento de Sistemas </strong>com previsão de conclusão em 2024.2, há pouco mais de um ano concentro todos os meus estudos no <br> <strong>Web Desenvolvimento</strong> com foco em tecnologias como Vue.js, Node.js e Laravel. Trabalhei em Empresas como Grupo VOZ e Agência Targo, além de proejtos como VSSystem e SCS (Empresa Junior da Facimp Wynden). Sempre disposto por novos desafios e por criar soluções que sejam eficazes e inteligentes, gerando impacto e inovação.
+          O código é uma arte e o <strong>Web Desenvolvimento </strong>é um mar de infinidades. Sou Jairo Junior, graduando do Curso de <strong>Análise e Desenvolvimento de Sistemas </strong>com previsão de conclusão em 2024.2, há pouco mais de um ano concentro todos os meus estudos no Web Desenvolvimento com foco em tecnologias como <strong> Vue.js, Node.js e Laravel. </strong> Trabalhei em Empresas como Grupo VOZ e Agência Targo, além de projetos como VSSystem e SCS (Empresa Junior da Facimp Wynden). Sempre disposto por <strong> novos desafios </strong> e por criar soluções que sejam eficazes e inteligentes, gerando impacto e inovação.
         </h5>
       </div>
       <div class="social-midia">

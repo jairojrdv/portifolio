@@ -84,7 +84,6 @@ export default {
 .nav-container {
   height: 80px;
   padding: 0 40px;
-  margin-left: 9%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
